@@ -1,0 +1,8 @@
+{
+  "name": "Nani room - smarft layout",
+  "description": "Planejador de layout de quarto interativo com visualização 2D arquitetônica e 3D realista, catálogo de móveis, ajuste de dimensões, ergonomia e cálculo de circulação.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
