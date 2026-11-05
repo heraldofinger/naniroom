@@ -130,6 +130,27 @@ export const ExportModal: React.FC<ExportModalProps> = ({
 
         {/* Export Options */}
         <div className="p-4 space-y-3 text-xs">
+          {/* Download Full Source Code Archive for GitHub */}
+          <a
+            href="/nani-room-smart-layout.tar.gz"
+            download="nani-room-smart-layout.tar.gz"
+            className="p-3.5 bg-slate-50 dark:bg-slate-850 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700/60 transition-all flex items-center justify-between group no-underline text-inherit"
+          >
+            <div className="flex items-center gap-3">
+              <div className="p-2 bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-md">
+                <FileDown className="w-4 h-4" />
+              </div>
+              <div>
+                <div className="font-semibold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 transition-colors">
+                  Baixar Código Fonte Completo (.tar.gz)
+                </div>
+                <div className="text-[11px] text-slate-500 mt-0.5">
+                  Pacote pronto com todo o código React, Three.js e Git configurado.
+                </div>
+              </div>
+            </div>
+          </a>
+
           {/* Download JSON option */}
           <div
             onClick={handleDownloadJson}
@@ -141,7 +162,7 @@ export const ExportModal: React.FC<ExportModalProps> = ({
               </div>
               <div>
                 <div className="font-semibold text-slate-900 dark:text-slate-100 group-hover:text-blue-600 transition-colors">
-                  Baixar Arquivo do Projeto (.json)
+                  Baixar Arquivo do Layout (.json)
                 </div>
                 <div className="text-[11px] text-slate-500 mt-0.5">
                   Salva o layout completo com dimensões e posições para editar depois.
